@@ -1,0 +1,23 @@
+[
+  {
+    "id":"service-example",
+    "uri": "lb://service-example",
+    "predicates":[
+      {
+        "name":"Path",
+        "args":{
+          "pattern":"/service-example/**"
+        }
+      }
+    ],
+    "filters": [
+      {
+        "name":"StripPrefix",
+        "args":{
+          "parts":1
+        }
+      }
+    ],
+    "order":0
+  }
+]
