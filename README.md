@@ -4,3 +4,4 @@
 3. spring-cloud-gateway 作为网关
 4. 支持 Nacos 配置网关动态路由
 5. 集成 mybatis-plus, swagger2 
+6. spring-cloud-gateway 聚合 swagger

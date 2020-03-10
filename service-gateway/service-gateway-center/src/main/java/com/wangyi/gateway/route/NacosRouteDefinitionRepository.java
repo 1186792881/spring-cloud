@@ -92,4 +92,8 @@ public class NacosRouteDefinitionRepository implements RouteDefinitionRepository
         return null;
     }
 
+    public static List<RouteDefinition> getNativeRouteDefinitions() {
+        return routeDefinitions;
+    }
+
 }

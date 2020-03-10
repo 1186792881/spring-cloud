@@ -39,7 +39,7 @@ public class FileController {
     @ApiOperation(value = "文件上传", notes = "上传一个文件，返回可访问的url")
     @PostMapping("/upload")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "file", value = "文件", paramType = "form", required = true, dataType = "file")
+            @ApiImplicitParam(name = "file", value = "文件", paramType = "form", required = true, dataType = "__file")
     })
     public Result upload(@RequestParam(required = true) MultipartFile file) throws Exception {
         String url = minioFileUtil.upload(file.getInputStream(), FileUtil.extName(file.getOriginalFilename()));
